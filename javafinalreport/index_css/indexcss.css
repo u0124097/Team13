@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+	body {
+		background:url(../index_pic/0014.gif)
+	}
+	/* 上方選單CSS */
+	#menuall {
+		position: fixed;
+		top: 10px;
+		left: 350px;
+	}
+	#menu {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: relative;
+		width: 450px;
+		float: left;	
+		background: green;
+	}
+	#menu li {
+		margin: 0;
+		padding: 0;
+		float: left;
+		border-right: 1px solid black;
+	}
+	#menu li a {
+		padding: 5px 10px;
+		display: block;
+		color: #fff;
+		text-decoration: none;
+	}
+	#menu li ul {
+		margin: 0;
+		padding: 10px 0;
+		list-style: none;
+		float: left;
+		position: absolute;
+		left: 0;
+		width: 450px;
+		color: #fff;
+		background: red no-repeat bottom;
+		display: none;
+	}
+	#menu li ul li { border-right: 1px solid black; }
+	#menu li ul li a { display: inline; }
+	#menu li ul li a:hover { text-decoration: underline; }
+
+	/* 跑馬燈CSS */
+	#runhorse {
+		position: fixed;
+		top: 80px;
+		left: 350px;
+	}
+	div#abgne_marquee {
+		position: relative;
+		overflow: hidden;
+		width: 445px;
+		height: 23px;
+		float: left;
+		border: 1px solid #ccc;
+	}
+	div#abgne_marquee ul, div#abgne_marquee li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	div#abgne_marquee ul {
+		position: absolute;
+	}
+	div#abgne_marquee ul li a {
+		display: block;
+		overflow: hidden;	/* 超出範圍的部份要隱藏 */
+		font-size:16px;
+		height: 25px;
+		line-height: 25px;
+		padding-left: 40px;
+		text-decoration: none;
+		background: url(../0014.gif) url(../back.gif) no-repeat;
+	}
+	div#abgne_marquee ul li.b1 a {
+		background-position: 5px 5px;
+	}
+	div#abgne_marquee ul li.b2 a {
+		background-position: 5px -15px;
+	}
+	div#abgne_marquee ul li.b3 a {
+		background-position: 5px -35px;
+	}
+	a img {
+		border: none;
+		vertical-align: middle;
+	}
+	
+	/* test */
+	
+	body{
+		font-size: small;
+	}
+	ul, li, h3, p{
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		list-style: none;
+	}
+	a img {
+		bordeR: none;
+		vertical-align:middle;
+	}
+	#abgne-block-20110111 {
+		position:fixed;
+		top: 150px;
+		left: 350px;
+		width:450px;
+		border: 1px solid #ccc;
+	}
+	#abgne-block-20110111 .info {
+		display: none;
+	}
+	#abgne-block-20110111 .on {
+		display: block;
+	}
+	#abgne-block-20110111 .title {
+		border-top: 2px solid #f6c;
+	}
+	#abgne-block-20110111 .title li {
+		cursor: pointer;
+		float: left;
+		width: 135px;
+		background-color: #3e3e3e;
+		border-right: 1px solid #000;
+		height: 54px;
+		padding: 7px 7px 4px;
+	}
+	#abgne-block-20110111 .title li.on, #abgne-block-20110111 .title li.over {
+		background-color: #f6c;
+		border-right: 1px solid #f6c;
+	}
+	#abgne-block-20110111 .title li h3 {
+		font-size: 13px;
+		color: #c90;
+		padding-bottom: 6px;
+	}
+	#abgne-block-20110111 .title li p{
+		font-size: 12px;
+		color: #ccc;
+	}
+	#abgne-block-20110111 .title li.on h3, #abgne-block-20110111 .title .over h3, #abgne-block-20110111 .title li.on p, #abgne-block-20110111 .title .over p {
+		color: #fff;
+	}
